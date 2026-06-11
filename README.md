@@ -1,9 +1,6 @@
 # Multi-Cloud AI Ops Platform
 
-An AI-powered multi-cloud operations platform that 
-inventories AWS and Azure resources, audits security, 
-optimises costs, and generates Terraform code — all 
-using a local AI model with no paid API costs.
+An AI-powered multi-cloud operations platform that inventories AWS and Azure resources, audits security, optimises costs, and generates Terraform code — all using a local AI model with no paid API costs.
 
 ## Live Portfolio
 🌐 https://d2rmjt7abyfd3o.cloudfront.net
@@ -24,38 +21,32 @@ using a local AI model with no paid API costs.
 
 ## Architecture
 
-AWS Account ──────┐
-├──► Python Automation
-Azure Account ────┘         │
-▼
-Ollama Local AI
-(Qwen2.5 Model)
-│
-▼
+AWS Account -----+
+|---> Python Automation ---> Ollama Local AI (Qwen2.5)
+Azure Account ----+                                    |
+v
 Multi-Cloud Audit Report
-│
-▼
+|
+v
 Terraform Code Generator
+
 
 ---
 
 ## Project Structure
 
 multi-cloud-ai-ops-platform/
-├── main.py
-├── requirements.txt
-├── README.md
-├── .gitignore
-├── modules/
-│   ├── aws_inventory.py
-│   ├── azure_inventory.py
-│   ├── ai_auditor.py
-│   ├── cost_optimizer.py
-│   └── terraform_generator.py
-├── terraform/
-│   └── main.tf
-└── reports/
-└── sample-report.md
+|-- main.py
+|-- requirements.txt
+|-- README.md
+|-- .gitignore
+|-- modules/
+|   |-- aws_inventory.py
+|   |-- azure_inventory.py
+|   |-- ai_auditor.py
+|   |-- cost_optimizer.py
+|   -- terraform_generator.py |-- terraform/ |   -- main.tf
+-- reports/     -- sample-report.md
 
 ---
 
@@ -85,25 +76,19 @@ multi-cloud-ai-ops-platform/
 ### Setup
 
 ```bash
-# Clone repository
 git clone https://github.com/Syed-2050/multi-cloud-ai-ops-platform.git
 cd multi-cloud-ai-ops-platform
 
-# Create virtual environment
 python3 -m venv venv
 source venv/bin/activate
 
-# Install dependencies
 pip install -r requirements.txt
 
-# Start Ollama AI model
 ollama run qwen2.5:1.5b
 
-# Verify cloud connections
 aws sts get-caller-identity
 az account show --output table
 
-# Run the platform
 python main.py
 ```
 
@@ -125,11 +110,9 @@ MULTI-CLOUD AI OPS PLATFORM
 
 ## Sample Terraform Output
 
-Describe infrastructure in plain English:
-
 Input: Create a VPC with public and private subnets on AWS
-Output: Complete Terraform HCL code with
-resource blocks, variables and outputs
+
+Output: Complete Terraform HCL code with resource blocks, variables and outputs
 
 ---
 
@@ -151,7 +134,7 @@ resource blocks, variables and outputs
 **Syed Arif Ali**
 Cloud Engineer | AWS | Azure | Python | AI Automation
 
-- 📧 Syedarif1907@gmail.com
-- 💼 [LinkedIn](https://linkedin.com/in/syed-arif-a-a13782407)
-- 🐙 [GitHub](https://github.com/Syed-2050)
-- 🌐 [Portfolio](https://d2rmjt7abyfd3o.cloudfront.net)
+- Email: Syedarif1907@gmail.com
+- LinkedIn: https://linkedin.com/in/syed-arif-a-a13782407
+- GitHub: https://github.com/Syed-2050
+- Portfolio: https://d2rmjt7abyfd3o.cloudfront.net
