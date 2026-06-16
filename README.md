@@ -132,7 +132,7 @@ Output: Complete Terraform HCL code with resource blocks, variables and outputs
 ## Author
 
 **Syed Arif Ali**
-Cloud Engineer | AWS | Azure | Python | AI Automation
+Cloud & DevOps Engineer | AWS | Azure | Python | AI Automation
 
 - Email: Syedarif1907@gmail.com
 - LinkedIn: https://linkedin.com/in/syed-arif-a-a13782407
